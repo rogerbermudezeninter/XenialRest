@@ -1,0 +1,14 @@
+# Config con credenciales
+config/config.json
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Imágenes (opcional: subir o no)
+# imagenes/productos/*
+
+# Export
+export/

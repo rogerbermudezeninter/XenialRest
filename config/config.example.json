@@ -1,0 +1,76 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "cors_origins": ["*"]
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "xenialrest",
+    "user": "xenial",
+    "password": "cambiar_en_produccion",
+    "pool_min": 2,
+    "pool_max": 10
+  },
+  "paths": {
+    "imagenes_productos": "./imagenes/productos",
+    "export_config": "./export"
+  },
+  "salones": [
+    {
+      "id": 1,
+      "codigo": "SALON",
+      "nombre": "Salón principal",
+      "orden": 1,
+      "mesas": [
+        { "codigo": "1", "nombre": "Mesa 1", "capacidad": 4, "pos_x": 100, "pos_y": 100 },
+        { "codigo": "2", "nombre": "Mesa 2", "capacidad": 2, "pos_x": 200, "pos_y": 100 },
+        { "codigo": "3", "nombre": "Mesa 3", "capacidad": 6, "pos_x": 300, "pos_y": 100 }
+      ]
+    },
+    {
+      "id": 2,
+      "codigo": "TERRAZA",
+      "nombre": "Terraza",
+      "orden": 2,
+      "mesas": []
+    }
+  ],
+  "impresoras": [
+    {
+      "codigo": "COCINA",
+      "nombre": "Cocina principal",
+      "tipo": "cocina",
+      "ip_host": "192.168.1.100",
+      "puerto": 9100,
+      "familias": ["entrantes", "primeros", "segundos", "postres"]
+    },
+    {
+      "codigo": "BARRA",
+      "nombre": "Barra",
+      "tipo": "barra",
+      "ip_host": "192.168.1.101",
+      "puerto": 9100,
+      "familias": ["bebidas"]
+    }
+  ],
+  "permisos_visuales": {
+    "mostrar_precios_camarero": true,
+    "mostrar_precios_caja": true,
+    "mostrar_precios_cocina": false,
+    "permiso_anular": ["admin", "caja"],
+    "permiso_descuento": ["admin", "caja"]
+  },
+  "preferencias_pantalla": {
+    "tema": "claro",
+    "tamano_fuente": "normal",
+    "mostrar_imagenes_productos": true,
+    "timeout_edicion_segundos": 300
+  },
+  "distribucion_carta": {
+    "columnas_tablet": 2,
+    "productos_por_pagina": 12,
+    "orden_familias": ["entrantes", "primeros", "segundos", "postres", "bebidas"]
+  }
+}
