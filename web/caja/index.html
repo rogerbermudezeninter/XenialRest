@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XenialRest - Caja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-brand">XenialRest</div>
+    <div class="header-info">
+      <span id="fecha-hora"></span>
+      <span class="status" id="status">Conectando...</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- Panel izquierdo: detalle del pedido -->
+    <aside class="panel-pedido">
+      <div class="pedido-header">
+        <h2>Pedido actual</h2>
+        <div class="pedido-meta">
+          <div class="meta-row">
+            <label>Mesa</label>
+            <select id="select-mesa">
+              <option value="">-- Seleccionar mesa --</option>
+            </select>
+          </div>
+          <div class="meta-row">
+            <label>Camarero</label>
+            <select id="select-camarero">
+              <option value="">-- Sin asignar --</option>
+            </select>
+          </div>
+          <div class="meta-row">
+            <label>Comensales</label>
+            <input type="number" id="input-comensales" min="1" value="1">
+          </div>
+        </div>
+      </div>
+
+      <div class="pedido-lineas" id="pedido-lineas">
+        <p class="pedido-vacio">Selecciona una mesa y añade productos</p>
+      </div>
+
+      <div class="pedido-totales">
+        <div class="total-row">
+          <span>Unidades</span>
+          <span id="total-unidades">0</span>
+        </div>
+        <div class="total-row">
+          <span>Líneas</span>
+          <span id="total-lineas">0</span>
+        </div>
+        <div class="total-row total-principal">
+          <span>Total</span>
+          <span id="total-importe">0,00 €</span>
+        </div>
+      </div>
+
+      <div class="pedido-acciones">
+        <button class="btn btn-primary" id="btn-abrir-mesa">Abrir mesa</button>
+        <button class="btn btn-success" id="btn-enviar-cocina" disabled>Enviar a cocina</button>
+        <button class="btn btn-warning" id="btn-cobrar" disabled>Cobrar</button>
+      </div>
+    </aside>
+
+    <!-- Área central: familias y productos -->
+    <section class="panel-productos">
+      <nav class="familias" id="familias">
+        <button class="familia-btn active" data-id="">Todos</button>
+        <!-- Se rellenan por JS -->
+      </nav>
+
+      <div class="productos-grid" id="productos-grid">
+        <!-- Se rellenan por JS -->
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

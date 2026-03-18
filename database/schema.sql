@@ -9,12 +9,13 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- TABLAS MAESTRAS
 -- ============================================
 
--- Familias de productos (entrantes, primeros, bebidas...)
+-- Familias de productos (entrantes, primeros, bebidas, menús...)
 CREATE TABLE familias (
     id SERIAL PRIMARY KEY,
     codigo VARCHAR(20) UNIQUE NOT NULL,
     nombre VARCHAR(100) NOT NULL,
     orden INT DEFAULT 0,
+    curso VARCHAR(20),  -- entrante, primero, segundo, tercero, cuarto, menu
     activo BOOLEAN DEFAULT true,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );

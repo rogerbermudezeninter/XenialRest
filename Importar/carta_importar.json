@@ -1,0 +1,147 @@
+[
+  {
+    "nombre": "Arroz de playa con zamburiñas y gambas rojas",
+    "precio_base": 26.9,
+    "curso": "cuarto"
+  },
+  {
+    "nombre": "Rodaballo a la brasa 500 gr. con aceite de ajitos",
+    "precio_base": 21.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "Arroz caldoso de marisco con gambas y cigalas",
+    "precio_base": 26.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "Fideua de pescadores con puntas de allioli",
+    "precio_base": 20.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "PAELLA DE VERDURES AMB FLOR DE CARXOFA",
+    "precio_base": 23.9,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "Arroz de playa con zamburiñas y gambas rojas",
+    "precio_base": 26.9,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "Canelons de la abuela con bechamel",
+    "precio_base": 9.9,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "Tronquitos de merluza rebozados con patatas fritas",
+    "precio_base": 10.9,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "CUIXA DE POLLASTRE A LA BRASA AMB PATATA AL CALIU",
+    "precio_base": 12.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "Muslo de Pollo a la brasa con patata al caliu",
+    "precio_base": 13.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "ENTRECOT DE VEDELLA 300GR DE GIRONA",
+    "precio_base": 24.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "\"CHULETÓN 5OOGR\" DE VEDELLA DE GIRONA",
+    "precio_base": 32.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "\"CHULETÓN 1KG \" DE VACA VELLA MADURADA 30 DIES",
+    "precio_base": 59.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "Macarrones a la boloñesa SIN GLUTEN",
+    "precio_base": 8.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "La burrata de Girona con cherrys confitados y albahaca",
+    "precio_base": 7.1,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "TORRADES RÚSTIQUES AMB PERNIL IBÈRIC",
+    "precio_base": 10.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "DAUS DE CAÇÓ EN ADOB A L'ANDALUSA",
+    "precio_base": 19.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "GAMBES VERMELLES PLANXA AMB SAL DE LLIMA",
+    "precio_base": 17.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "ZAMBURIÑA DEL PACÍFIC A LA PLANXA",
+    "precio_base": 18.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "TALLINES AMB ALL I JULIVERT",
+    "precio_base": 14.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "MUSCLOS AL VAPOR AMB LLIMONA I LLAURER",
+    "precio_base": 18.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "CARXOFA CONFITADA AMB ENCENALLS D'IBÈRICAlcachofa confitada con ibérico (TEMP.) - 2 ud",
+    "precio_base": 14.9,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "AMANIDA DE L'HORTA AMB TONYINA",
+    "precio_base": 11.5,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "AMANIDA MESCLUM DE KM0 AMB FORMATGE DE CABRA I FRUITS SECS",
+    "precio_base": 13.9,
+    "curso": "entrante"
+  },
+  {
+    "nombre": "Parrillada de verduras a la brasa con romesco",
+    "precio_base": 12.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "CARPACCIO DE TOMÀQUET AMB CEBA I TONYINA",
+    "precio_base": 12.5,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "LA BURRATA DE GIRONA AMB XERRIS CONFITATS I ALFÀBREGA",
+    "precio_base": 14.9,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "OSTRA DE NORMANDIA Ostra de Normandía (según mercado) por unidades",
+    "precio_base": 4.5,
+    "curso": "segundo"
+  },
+  {
+    "nombre": "OSTRA DE NORMANDIA Ostra de Normandía (según mercado) por unidades 4.5€",
+    "precio_base": 11.9,
+    "curso": "segundo"
+  }
+]

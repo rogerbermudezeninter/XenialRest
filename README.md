@@ -69,10 +69,14 @@ XenialRest/
 │   ├── server.js
 │   └── package.json
 ├── database/
-│   └── schema.sql       # Esquema PostgreSQL
+│   ├── schema.sql       # Esquema PostgreSQL
+│   └── seed-demo.sql    # Datos de demostración (familias, productos, mesas)
 ├── config/
 │   ├── config.example.json
 │   └── config.json      # (crear, no versionar)
+├── web/
+│   ├── caja/            # Módulo caja web (HTML/JS)
+│   └── caja-app/        # Módulo caja React + Electron (app escritorio)
 ├── imagenes/
 │   └── productos/       # Fotos de productos (rutas en BD)
 └── README.md
@@ -95,6 +99,7 @@ XenialRest/
 | GET | /api/tickets/:id/pagos | Listar pagos del ticket |
 | GET | /api/cocina/pendientes | Pedidos pendientes cocina |
 | PATCH | /api/cocina/linea/:id/estado | Marcar línea (en_preparacion, servido) |
+| GET | /api/familias | Lista familias de productos |
 | GET | /api/productos | Lista productos |
 | GET | /api/formas-pago | Formas de pago |
 | GET | /api/config | Configuración activa |
@@ -114,9 +119,24 @@ Cada ticket tiene:
 
 Si otro dispositivo intenta editar, mostrar: "Mesa en edición por Juan desde hace X segundos".
 
+## Módulo caja web
+
+Interfaz web para toma de pedidos con:
+- **Familias**: pestañas para filtrar por categoría (Entrantes, Primeros, Bebidas...)
+- **Selector de productos**: grid con productos e imágenes
+- **Detalle del pedido**: panel con líneas, cantidades, totales y acciones
+
+- **Web:** `http://localhost:3000/caja/` (con la API en marcha)
+- **App escritorio (React + Electron):** `python iniciar_caja_desktop.py` o ejecutar `npm run electron:dev` en `web/caja-app/`
+
+Cargar datos de prueba:
+```bash
+psql -U xenial -d xenialrest -f database/seed-demo.sql
+```
+
 ## Próximos pasos
 
 1. App Android (Kotlin/Java) que consuma la API
 2. Pantalla cocina (web o Android)
-3. Módulo caja para cobros
+3. Pantalla de cobro (integrar en módulo caja)
 4. Sincronización de configuración JSON ↔ BD
